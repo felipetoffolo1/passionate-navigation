@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
  * Category ui component
  * @param {*} props 
  */
-let Category = props => {
+export const Category = props => {
   const itemStyles = {
     marginLeft: 24
   };

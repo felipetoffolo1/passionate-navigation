@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
  * Course ui component
  * @param {*} props 
  */
-let Course = props => (
+export const Course = props => (
   <Card>
     <CardHeader
       title={props.course.Name}

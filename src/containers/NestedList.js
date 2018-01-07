@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 /**
  * Nested List of vertical x categories
  */
-class NestedList extends Component {
+export class NestedList extends Component {
   
   static propTypes = {
     //** Array of vertical object */

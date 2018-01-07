@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import Course from "./components/Course";
 import { connect } from "react-redux";
 import darkBaseTheme from "material-ui/styles/baseThemes/darkBaseTheme";
 import lightBaseTheme from "material-ui/styles/baseThemes/lightBaseTheme";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
-import NestedList from "./containers/NestedList";
+import Course from "../components/Course";
+import NestedList from "../containers/NestedList";
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
