@@ -1,11 +1,23 @@
 import React from "react";
+import {Card, CardHeader} from 'material-ui/Card';
+import PropTypes from "prop-types";
 
-
-let Course = props =>(
-    <div>
-        <h1>{props.name}</h1>
-    </div>
-
-)
+/**
+ * Course ui component
+ * @param {*} props 
+ */
+let Course = props => (
+  <Card>
+    <CardHeader
+      title={props.course.Name}
+      subtitle={props.course.Author}
+      avatar={`https://api.adorable.io/avatars/150/${props.course.Id}.png`}
+    />
+  </Card>
+);
+Course.propTypes = {
+  //** The course object */
+  course: PropTypes.object.isRequired
+};
 
 export default Course;

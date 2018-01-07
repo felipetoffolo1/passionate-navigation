@@ -2,7 +2,7 @@ import { SET_CURRENT_CATEGORY } from "../constants/ActionTypes";
 import courses from "../data/courses.json";
 
 export default (
-  state = { all: courses, filteredCourses: [], currentCourse: undefined },
+  state = { all: courses, filteredCourses: []},
   action
 ) => {
   switch (action.type) {
